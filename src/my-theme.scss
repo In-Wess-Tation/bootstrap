@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,300&display=swap');
+$font-family-sans-serif: 'Comic Neue', Arial, sans-serif;
+$spacer: 2rem;
+
+// $theme-colors: (
+//     danger: pink
+// );
+
+//import the funtions & virables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+    "peach": rgb(245, 166, 132),
+    "darkBlue": #0A2640,
+    "teal": #69E6A6,
+);
+
+$theme-colors: map-merge($custom-theme-colors , $theme-colors );
+
+/* import bootstrap to set changes */
+@import "bootstrap/scss/bootstrap";
+
